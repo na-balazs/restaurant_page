@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*Keep footer at the bottom*/
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#innerBody {
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+#header, #footer {
+    flex-shrink: 0;
+}
+
+/*Keep footer at the bottom ENDS HERE*/
+
+
+body, #innerBody {
+  display: flex;
+  flex-direction: column;
+
+}
+
+body {
+    background: black;
+    background: url('./assets/pexels-pixabay-260922.jpg');
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Lora', serif;
+    color: goldenrod;
+}
+
+#innerBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    color: goldenrod;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Lora', serif;
+    color: goldenrod;
+}
+
+#header0, #header1, #header2 {
+    cursor: pointer;
+};
+
+#drinks, #foods, #desserts{
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: row;
+}
